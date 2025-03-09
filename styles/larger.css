@@ -1,0 +1,54 @@
+@media screen and (min-width: 700px) {
+
+    /* header */
+    header {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    header span {
+        font-weight: 450;
+        font-size: 3.5rem;
+    }
+
+    /* navigation */
+    nav {
+        padding: 1rem 0;
+        margin: 0 auto 1rem;
+        background-color: var(--secondary-color);
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: var(--primary);
+        font-weight: bold;
+        font-size: 1.35rem;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+        width: auto;
+        list-style: none;
+    }
+
+    /* hamburger button */
+    #hamburger {
+        display: none;
+    }
+
+    /* main */
+    main {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+}
