@@ -82,7 +82,7 @@ function courseCards(filter = "All") {
     const cardContainer = document.querySelector(".card-layout");
     cardContainer.innerHTML = "";
 
-    const filteredCourses = courses.filter(course => 
+    const filteredCourses = courses.filter(course =>
         filter === "All" || course.subject === filter
     );
 
@@ -92,12 +92,12 @@ function courseCards(filter = "All") {
     filteredCourses.forEach(course => {
         const courseCard = document.createElement("div");
         const title = document.createElement("h3");
-        
+
         if (course.completed) {
             courseCard.classList.add("completed", "card");
             title.textContent = `${course.subject} ${course.number} ✔`;
         }
-        else{
+        else {
             courseCard.classList.add("not-completed", "card");
             title.textContent = `${course.subject} ${course.number}`;
         }

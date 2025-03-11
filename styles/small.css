@@ -11,12 +11,15 @@
     --accent-color: #F8FABE;
 }
 
-html, body{
+html,
+body {
     width: 100%;
     overflow-x: hidden;
 }
 
-header, main, footer {
+header,
+main,
+footer {
     max-width: 100%;
     overflow: hidden;
 }
@@ -95,91 +98,91 @@ header span {
 }
 
 /* main */
-main{
+main {
     max-width: 95%;
     margin: 0 auto;
     padding-bottom: 1rem;
 }
 
-.layout{
+.layout {
     display: block;
 }
 
-h2{
+h2 {
     padding: 0.5rem;
     background-color: var(--primary-color);
     color: white;
 }
 
-.layout section{
+.layout section {
     border: 2px solid var(--primary-color);
     border-radius: 8px;
     margin-bottom: 1rem;
 }
 
-.course li{
+.course li {
     padding: 0.5rem 0.25rem;
     margin-left: 2rem;
 }
 
-.place figure{
+.place figure {
     margin: 1rem;
     text-align: center;
 }
 
-.place img{
+.place img {
     max-width: 100%;
     height: auto;
 }
 
-.place figcaption{
+.place figcaption {
     text-align: center;
 }
 
-.filters{
+.filters {
     display: flex;
     justify-content: center;
     max-width: 100%;
     border-bottom: 1px solid var(--primary-color);
 }
 
-.filters button{
+.filters button {
     padding: 10px 40px;
     max-width: 30%;
     margin: 0.5rem;
 }
 
-.filters button:hover{
+.filters button:hover {
     background-color: black;
     color: white;
 }
 
-.card-layout{
+.card-layout {
     display: block;
     margin: 1rem;
 }
 
-.card{
+.card {
     padding: 0.5rem 1rem;
     border: 1px solid var(--primary-color);
     border-radius: 5px;
     margin-bottom: 1rem;
 }
 
-.card h3{
+.card h3 {
     text-align: center;
 }
 
-.completed{
+.completed {
     background-color: var(--secondary-color);
 
 }
 
-.not-completed{
+.not-completed {
     background-color: var(--accent-color);
 }
 
-.certificate p{
+.certificate p {
     font-weight: bold;
     padding: 1rem;
 }
