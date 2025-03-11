@@ -9,10 +9,17 @@
     --primary-color: #1F5A29;
     --secondary-color: #9AE1AF;
     --accent-color: #F8FABE;
-    --dark-color: #2F2F2F;
 }
 
-body {}
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header, main, footer {
+    max-width: 100%;
+    overflow: hidden;
+}
 
 /* header */
 header {
@@ -25,7 +32,9 @@ header {
 }
 
 header img {
-    border: 1px solid var(--accent-color);
+    width: 90px;
+    height: auto;
+    border: 2px solid var(--accent-color);
     border-radius: 50%;
 }
 
@@ -35,14 +44,6 @@ header span {
 }
 
 /* navigation */
-nav a {
-    display: block;
-    text-align: center;
-    padding: 1rem;
-    text-decoration: none;
-    font-size: larger;
-    font-weight: bold;
-}
 
 .navigation a:hover {
     background-color: var(--primary-color);
@@ -53,15 +54,14 @@ nav a {
     display: flex;
 }
 
-.navigation li {
-    flex: 1 1 auto;
-}
-
 .navigation a {
     display: block;
     text-align: center;
     font-size: 1.25rem;
     text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    color: black;
 }
 
 .navigation {
@@ -70,8 +70,8 @@ nav a {
     position: absolute;
     top: 3rem;
     right: 0;
+    left: 0;
     background-color: var(--secondary-color);
-    color: black;
     width: 100%;
 }
 
@@ -82,8 +82,8 @@ nav a {
     background: none;
     color: white;
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 0.5rem;
+    right: 0.5rem;
 }
 
 #hamburger::before {
@@ -95,10 +95,93 @@ nav a {
 }
 
 /* main */
-main {
+main{
     max-width: 95%;
     margin: 0 auto;
-    padding: 1rem 0;
+    padding-bottom: 1rem;
+}
+
+.layout{
+    display: block;
+}
+
+h2{
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.layout section{
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.course li{
+    padding: 0.5rem 0.25rem;
+    margin-left: 2rem;
+}
+
+.place figure{
+    margin: 1rem;
+    text-align: center;
+}
+
+.place img{
+    max-width: 100%;
+    height: auto;
+}
+
+.place figcaption{
+    text-align: center;
+}
+
+.filters{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.filters button{
+    padding: 10px 40px;
+    max-width: 30%;
+    margin: 0.5rem;
+}
+
+.filters button:hover{
+    background-color: black;
+    color: white;
+}
+
+.card-layout{
+    display: block;
+    margin: 1rem;
+}
+
+.card{
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.card h3{
+    text-align: center;
+}
+
+.completed{
+    background-color: var(--secondary-color);
+
+}
+
+.not-completed{
+    background-color: var(--accent-color);
+}
+
+.certificate p{
+    font-weight: bold;
+    padding: 1rem;
 }
 
 /* footer */
