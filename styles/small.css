@@ -48,7 +48,7 @@ header span {
 
 /* navigation */
 
-.navigation a:hover {
+.navigation a:hover{
     background-color: var(--primary-color);
     color: white;
 }
@@ -65,6 +65,7 @@ header span {
     padding: 0.5rem 1rem;
     font-weight: bold;
     color: black;
+    margin: 0 4rem;
 }
 
 .navigation {
@@ -76,6 +77,11 @@ header span {
     left: 0;
     background-color: var(--secondary-color);
     width: 100%;
+}
+
+.active{
+    background-color: var(--accent-color);
+    border: 1px solid var(--primary-color);
 }
 
 /* hamburger button */
