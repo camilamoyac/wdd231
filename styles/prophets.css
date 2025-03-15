@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 0.5rem;
+}
+
+section {
+    margin: 0.25rem;
+    padding: 0.5rem;
+    background-color: #f8e2e9;
+    border: 1px solid #ffacc7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section p,
+section h2 {
+    padding: 0.2rem;
+}
+
+footer {
+    border-top: 1px solid gray;
+}
+
+footer p {
+    text-align: center;
+    padding: 1rem;
+}
