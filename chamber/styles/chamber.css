@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --primary: #28536B;
+    --primary-accent: #7EA8BE;
+    --secondary: #47620E;
+    --secondary-accent: #A1B17E;
+    --light: #FAFFED;
+    --dark: #1B2011;
+}
+
+body {
+    max-width: 100%;
+    background-color: var(--light);
+}
+
+/* header */
+header {
+    background-color: var(--primary);
+    border-bottom: 5px solid var(--primary-accent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo h1 {
+    padding-left: 1.5rem;
+    font-family: "Playfair", serif;
+    font-size: 3rem;
+    color: var(--light);
+}
+
+.logo p {
+    padding-left: 0.5rem;
+    font-family: "Playfair", serif;
+    font-size: 1.5rem;
+    color: var(--light);
+}
+
+.navigation {
+    display: none;
+    list-style: none;
+    flex-direction: column;
+    position: absolute;
+    top: 108px;
+    right: 0;
+    background-color: var(--primary);
+    width: 100%;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation li {
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+}
+
+.navigation a {
+    color: var(--light);
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.25rem;
+}
+
+.navigation a:hover {
+    background-color: var(--primary-accent);
+    color: var(--dark);
+}
+
+.active a {
+    color: var(--dark);
+    background-color: var(--light);
+    border: 1px solid var(--primary-accent);
+}
+
+/* hamburger button */
+#hamburger {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--light);
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+#hamburger::before {
+    content: "≡";
+}
+
+#hamburger.open::before {
+    content: "✖";
+}
+
+/* main */
+main {
+    padding: 1rem;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+/* footer */
+footer {
+    padding: 1rem;
+    background-color: var(--primary);
+    border-top: 5px solid var(--primary-accent);
+    display: block;
+}
+
+footer p {
+    color: var(--light);
+}
+
+.contact, .social, .footinfo{
+    padding: 0.5rem;
+    flex: 1;
+}
+
+.social{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bold{
+    font-weight: bold;
+}

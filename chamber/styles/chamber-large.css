@@ -1,0 +1,40 @@
+@media screen and (min-width: 500px) {
+    .logo img {
+        width: 130px;
+        height: auto;
+    }
+
+    .logo h1 {
+        font-size: 4rem;
+    }
+
+    .logo p {
+        font-size: 2rem;
+    }
+
+    .navigation {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        background-color: transparent;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    main{
+        max-width: 1200px;
+    }
+
+    footer{
+        display: flex;
+        padding: 0.5rem 4rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footinfo{
+        text-align: right;
+    }
+}

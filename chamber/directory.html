@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="This page provides a list of local business and other organizations that belong to the chamber of commerce.">
+        content="This page provides a list of local business and other organizations that belong to the Peñlolén Chamber of Commerce.">
     <meta name="author" content="Camila Sol Moya Casanova">
-    <title>Directory Page for Santiago Chamber of commerce</title>
+    <title>Directory Page for Peñalolén Chamber of commerce</title>
 
-    <meta property="og:title" content="Directory Page for Santiago Chamber of commerce">
+    <meta property="og:title" content="Directory Page for Peñalolén Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="images/santiago.jpg">
     <meta property="og:url" content="https://camilamoyac.github.io/wdd231/chamber/directory.html">
     <meta property="og:description"
-        content="This page provides a list of local business and other organizations that belong to the chamber of commerce.">
+        content="This page provides a list of local business and other organizations that belong to the Peñalolén Chamber of Commerce.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,19 +28,66 @@
     <link rel="stylesheet" href="styles/chamber-large.css">
 
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
 
     <link rel="icon" href="favicon.png">
 </head>
 
 <body>
     <header>
-
+        <div class="logo">
+            <img src="images/logo.png"
+                alt="Peñalolén chamber of commerce logo: drawing of green plant with three leaves." width="130"
+                height="130">
+            <div class="logo_text">
+                <h1>Peñalolén</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="home.html" id="home">Home</a></li>
+                <li class="active"><a href="#" id="directory">Directory</a></li>
+                <li><a href="join.html" id="join">Join</a></li>
+                <li><a href="discover.html" id="discover">Discover</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
+        <button type="button" id="hamburger" aria-label="Open navigation menu"></button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugiat veniam ut tempore ab quibusdam,
+            reiciendis magni! Doloremque at porro dolorum fugit totam deleniti nemo facilis beatae, sapiente odit
+            blanditiis nisi. Inventore, illum qui excepturi corporis, veniam numquam veritatis, debitis neque quam earum
+            impedit labore? Nemo voluptatum vero deserunt enim.</p>
     </main>
 
     <footer>
+        <div class="contact">
+            <p class="bold">Peñalolén Chamber of Commerce</p>
+            <p>PD1249-Consistorial / Esq - Av. Quilín</p>
+            <p>Peñalolén, Región Metropolitana</p>
+            <p>contact@penalolencc.cl</p>
+            <p>+56 9 9876 9876</p>
+        </div>
+        <div class="social">
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="images/youtube.png" alt="YouTube icon" width="50" height="50">
+            </a>
+            <a href="https://www.linkedin.com/in/camila-moya-casanova-63b28b165/" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn icon" width="50" height="50">
+            </a>
+            <a href="https://x.com/home?lang=en" target="_blank">
+                <img src="images/twitter.png" alt="Twitter icon" width="50" height="50">
+            </a>
+        </div>
+        <div class="footinfo">
+            <p>WDD231 Class Project</p>
+            <p>Camila Sol Moya Casanova</p>
+            <p>©<span id="currentyear"></span> Peñalolén Chamber of Commerce</p>
+            <p id="lastmodified"></p>
+        </div>
     </footer>
 </body>
 
