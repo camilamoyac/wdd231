@@ -1,0 +1,104 @@
+{
+    "companies": [
+        {
+            "companyName": "Tech Innovations",
+            "address": "Av. Consistorial 1234, Peñalolén, Chile",
+            "phone": "+56 9 1234 5678",
+            "email": "contact@techinnovations.cl",
+            "website": "https://techinnovations.cl",
+            "logo": "images/tech-innovations.png",
+            "memberLevel": 1,
+            "description": "A cutting-edge software development company specializing in AI and cloud solutions."
+        },
+        {
+            "companyName": "Green Foods",
+            "address": "Calle Los Olivos 456, Santiago, Chile",
+            "phone": "+56 9 9876 5432",
+            "email": "info@greenfoods.cl",
+            "website": "https://greenfoods.cl",
+            "logo": "images/green-foods.png",
+            "memberLevel": 3,
+            "description": "Organic food supplier offering farm-to-table products sourced from local farmers."
+        },
+        {
+            "companyName": "ConstructoMax",
+            "address": "Av. Quilín 789, Peñalolén, Santiago, Chile",
+            "phone": "+56 9 5555 5555",
+            "email": "hello@constructomax.cl",
+            "website": "https://constructomax.cl",
+            "logo": "images/constructomax.png",
+            "memberLevel": 1,
+            "description": "Leading construction company specializing in sustainable and earthquake-resistant buildings."
+        },
+        {
+            "companyName": "EcoRide",
+            "address": "Camino San Luis 321, Peñalolén, Santiago",
+            "phone": "+56 9 1111 2222",
+            "email": "support@ecoride.cl",
+            "website": "https://ecoride.cl",
+            "logo": "images/ecoride.png",
+            "memberLevel": 1,
+            "description": "Eco-friendly bicycle rental and sales, promoting green transportation."
+        },
+        {
+            "companyName": "Andes Tours",
+            "address": "Los Presidentes 987, Peñalolén, Chile",
+            "phone": "+56 9 3333 4444",
+            "email": "info@andestours.cl",
+            "website": "https://andestours.cl",
+            "logo": "images/andes-tours.png",
+            "memberLevel": 2,
+            "description": "Adventure tourism company offering guided treks, climbing, and outdoor activities."
+        },
+        {
+            "companyName": "SolarTech",
+            "address": "Las Parcelas 654, Peñalolén, Santiago",
+            "phone": "+56 9 7777 8888",
+            "email": "contact@solartech.cl",
+            "website": "https://solartech.cl",
+            "logo": "images/solartech.png",
+            "memberLevel": 2,
+            "description": "Renewable energy solutions provider specializing in solar panels for homes and businesses."
+        },
+        {
+            "companyName": "Peñalolén Artisans",
+            "address": "Pasaje Los Artesanos 222, Santiago, Chile",
+            "phone": "+56 9 6666 9999",
+            "email": "support@penalolenartisans.cl",
+            "website": "https://penalolenartisans.cl",
+            "logo": "images/penalolen-artisans.png",
+            "memberLevel": 3,
+            "description": "Handmade crafts and local artisan products, promoting Chilean culture and traditions."
+        },
+        {
+            "companyName": "CodeCrafters",
+            "address": "Diagonal Las Torres 77, Peñalolén",
+            "phone": "+56 9 1212 3434",
+            "email": "contact@codecrafters.cl",
+            "website": "https://codecrafters.cl",
+            "logo": "images/codecrafters.png",
+            "memberLevel": 2,
+            "description": "Software company offering web and mobile development services for businesses."
+        },
+        {
+            "companyName": "BioVida Health",
+            "address": "Centro Médico 303, Santiago, Chile",
+            "phone": "+56 9 8787 5656",
+            "email": "info@biovidahealth.cl",
+            "website": "https://biovidahealth.cl",
+            "logo": "images/biovidahealth.png",
+            "memberLevel": 1,
+            "description": "Private healthcare provider specializing in holistic medicine and wellness programs."
+        },
+        {
+            "companyName": "Marina Delicias",
+            "address": "Camino Las Perdices 900, Peñalolén, Chile",
+            "phone": "+56 9 4343 2121",
+            "email": "reservas@marinadelicias.cl",
+            "website": "https://marinadelicias.cl",
+            "logo": "images/marina-delicias.png",
+            "memberLevel": 1,
+            "description": "Seafood restaurant offering gourmet dishes with locally sourced ingredients."
+        }
+    ]
+}

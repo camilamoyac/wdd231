@@ -30,6 +30,7 @@
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/footer.js" defer></script>
+    <script src="scripts/buttons.js" defer></script>
 
     <link rel="icon" href="favicon.png">
 </head>
@@ -39,8 +40,8 @@
         <div class="logo">
             <img src="images/logo.png"
                 alt="Peñalolén chamber of commerce logo: drawing of green plant with three leaves." width="130"
-                height="130">
-            <div class="logo_text">
+                height="130" loading="lazy">
+            <div class="logo-text">
                 <h1>Peñalolén</h1>
                 <p>Chamber of Commerce</p>
             </div>
@@ -57,10 +58,13 @@
 
     <main>
         <button type="button" id="hamburger" aria-label="Open navigation menu"></button>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugiat veniam ut tempore ab quibusdam,
-            reiciendis magni! Doloremque at porro dolorum fugit totam deleniti nemo facilis beatae, sapiente odit
-            blanditiis nisi. Inventore, illum qui excepturi corporis, veniam numquam veritatis, debitis neque quam earum
-            impedit labore? Nemo voluptatum vero deserunt enim.</p>
+        <div class="view">
+            <button id="grid">⊞</button>
+		    <button id="list">☰</button>
+        </div>
+        <div class="cards">
+            <!-- populate with javascript -->
+        </div>
     </main>
 
     <footer>
@@ -73,13 +77,13 @@
         </div>
         <div class="social">
             <a href="https://www.youtube.com/" target="_blank">
-                <img src="images/youtube.png" alt="YouTube icon" width="50" height="50">
+                <img src="images/youtube.png" alt="YouTube icon" width="50" height="50" loading="lazy">
             </a>
             <a href="https://www.linkedin.com/in/camila-moya-casanova-63b28b165/" target="_blank">
-                <img src="images/linkedin.png" alt="LinkedIn icon" width="50" height="50">
+                <img src="images/linkedin.png" alt="LinkedIn icon" width="50" height="50" loading="lazy">
             </a>
             <a href="https://x.com/home?lang=en" target="_blank">
-                <img src="images/twitter.png" alt="Twitter icon" width="50" height="50">
+                <img src="images/twitter.png" alt="Twitter icon" width="50" height="50" loading="lazy">
             </a>
         </div>
         <div class="footinfo">
