@@ -23,8 +23,27 @@
         display: none;
     }
 
-    main{
+    main {
         max-width: 1200px;
+    }
+    
+    /* call to action */
+    .hero a{
+        top: 60%;
+        right: 15%;
+        font-size: 1.7rem;
+        font-weight: 700;
+    }
+
+    /* main content */
+    .main-content{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .main-content section{
+        margin-bottom: 0;
     }
 
     .cards{

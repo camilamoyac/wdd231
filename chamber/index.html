@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="This page provides a list of local business and other organizations that belong to the Peñlolén Chamber of Commerce.">
+        content="This page provides community information, weather, calls to action, and business spotlights for the Peñlolén Chamber of Commerce.">
     <meta name="author" content="Camila Sol Moya Casanova">
-    <title>Company Directory | Peñalolén Chamber of Commerce</title>
+    <title>Home | Peñalolén Chamber of Commerce</title>
 
     <meta property="og:title" content="Directory Page for Peñalolén Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://camilamoyac.github.io/wdd231/chamber/images/andes-tours.png">
     <meta property="og:url" content="https://camilamoyac.github.io/wdd231/chamber/directory.html">
     <meta property="og:description"
-        content="This page provides a list of local business and other organizations that belong to the Peñalolén Chamber of Commerce.">
+        content="This page provides community information, weather, calls to action, and business spotlights for the Peñlolén Chamber of Commerce.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,6 @@
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/footer.js" defer></script>
-    <script src="scripts/buttons.js" defer></script>
 
     <link rel="icon" href="favicon.png">
 </head>
@@ -49,8 +48,8 @@
         <button type="button" id="hamburger" aria-label="Open navigation menu"></button>
         <nav>
             <ul class="navigation">
-                <li><a href="index.html" id="home">Home</a></li>
-                <li class="active"><a href="#" id="directory">Directory</a></li>
+                <li class="active"><a href="#" id="home">Home</a></li>
+                <li><a href="directory.html" id="directory">Directory</a></li>
                 <li><a href="join.html" id="join">Join</a></li>
                 <li><a href="discover.html" id="discover">Discover</a></li>
             </ul>
@@ -58,13 +57,37 @@
     </header>
 
     <main>
-        <h1>Company Directory</h1>
-        <div class="view">
-            <button id="grid">⊞</button>
-		    <button id="list">☰</button>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 501px)" srcset="images/hero.webp">
+                <img src="images/hero-small.webp" alt="Big green leaves." width="1600" height="600">
+            </picture>
+            <a href="join.html">Become a Member Now!</a>
         </div>
-        <div class="cards">
-            <!-- populate with javascript -->
+        <h1>Home</h1>
+        <div class="main-content">
+            <section class="events">
+                <h2>Upcoming Events</h2>
+
+                <h3>Peñalolén Business Expo - Saturday, March 29th</h3>
+                <p>Showcase your business and network with local entrepreneurs.</p>
+
+                <h3>Small Business Workshop - Tuesday, April 1st</h3>
+                <p>Learn about funding, marketing, and scaling your business.</p>
+
+                <h3>Monthly Chamber Member Luncheon - Saturday, April 12th</h3>
+                <p>Meet fellow business owners and discuss economic trends.</p>
+            </section>
+
+            <section class="weather">
+                <h2>Weather Today</h2>
+            </section>
+            <section class="forecast">
+                <h2>Forecast</h2>
+            </section>
+        </div>
+        <div class="spotlights">
+
         </div>
     </main>
 
