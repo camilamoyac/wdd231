@@ -139,13 +139,13 @@ main {
     margin-right: -50vw;
 }
 
-.hero img{
+.hero img {
     width: 100%;
     height: auto;
 }
 
 /* call to action */
-.hero a{
+.hero a {
     position: absolute;
     top: 50%;
     right: 8%;
@@ -159,19 +159,19 @@ main {
     border-radius: 10px;
 }
 
-.hero a:hover{
+.hero a:hover {
     background-color: var(--primary-accent);
     color: var(--dark);
-    border: 2px solid var(--primary); 
+    border: 2px solid var(--primary);
 }
 
 /* main content */
-.main-content{
+.main-content {
     display: block;
     margin: 0 auto;
 }
 
-.main-content h2{
+.main-content h2 {
     background-color: var(--primary);
     color: var(--light);
     padding: 0.5rem 1rem;
@@ -179,18 +179,39 @@ main {
     font-size: 2rem;
 }
 
-.main-content section{
+.main-content section {
     background-color: var(--primary-accent);
     padding: 0.5rem;
     margin-bottom: 1rem;
 }
 
-.events h3{
+.events h3 {
     padding: 0.5rem 1rem;
 }
 
-.events p{
+.events p {
     padding: 0 1rem 1rem;
+}
+
+/* weather */
+.weatherContainer {
+    display: flex;
+}
+
+.weatherInfo,
+.forecastContainer {
+    padding: 1rem;
+}
+
+.weatherInfo p,
+.weatherInfo h3,
+.forecastContainer p {
+    padding-bottom: 10px;
+}
+
+.weatherInfo span,
+.forecastContainer span {
+    font-weight: bold;
 }
 
 /* view selection */
@@ -208,19 +229,28 @@ main {
     font-size: 1.25rem;
 }
 
+/* spotlights */
+.spotlights {
+    display: block;
+    padding: 2rem 0;
+    min-height: 400px;
+}
+
 /* cards */
 .cards {
     display: block;
     min-height: 4600px;
 }
 
-.cards section {
+.cards section,
+.spotlights section {
     padding: 0.5rem;
     background-color: var(--secondary-accent);
     margin-bottom: 2rem;
 }
 
-.cards h2 {
+.cards h2,
+.spotlights h2 {
     background-color: var(--secondary);
     color: var(--light);
     padding: 0.5rem;
@@ -229,13 +259,16 @@ main {
     font-size: 2.5rem;
 }
 
-.cards img {
+.cards img,
+.spotlights img {
     display: block;
     margin: 15px auto;
 }
 
 .cards p,
-.cards a {
+.cards a,
+.spotlights p,
+.spotlights a {
     text-decoration: none;
     text-align: center;
     display: block;
@@ -244,19 +277,22 @@ main {
     color: var(--dark);
 }
 
-.cards a:hover{
+.cards a:hover,
+.spotlights a:hover {
     font-weight: bold;
 }
 
-.cards .silver {
+.cards .silver,
+.spotlights .silver {
     border: 5px solid #bcc6cc;
 }
 
-.cards .gold {
+.cards .gold,
+.spotlights .gold {
     border: 5px solid #d3af37;
 }
 
-.list{
+.list {
     display: flex;
     flex-direction: column;
     min-height: 1300px;
@@ -274,11 +310,12 @@ main {
     margin: 0 1rem;
 }
 
-.list .optional{
+.list .optional {
     display: none;
 }
 
-.list .silver, .list .gold{
+.list .silver,
+.list .gold {
     border: none;
 }
 
@@ -291,7 +328,8 @@ main {
     text-align: left;
 }
 
-.list p, .list a{
+.list p,
+.list a {
     padding: 0.5rem;
     text-align: left;
 }
