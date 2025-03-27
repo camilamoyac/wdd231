@@ -92,6 +92,7 @@ function courseCards(filter = "All") {
     filteredCourses.forEach(course => {
         const courseCard = document.createElement("div");
         const title = document.createElement("h3");
+        const moreInfo = document.createElement("button");
 
         if (course.completed) {
             courseCard.classList.add("completed", "card");
@@ -102,8 +103,16 @@ function courseCards(filter = "All") {
             title.textContent = `${course.subject} ${course.number}`;
         }
 
+        moreInfo.textContent = "More Info";
+        moreInfo.setAttribute("class", `openButton`);
+
         courseCard.appendChild(title);
+        courseCard.appendChild(moreInfo);
         cardContainer.appendChild(courseCard);
+
+        moreInfo.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
     });
 }
 
@@ -122,3 +131,24 @@ document.addEventListener("DOMContentLoaded", function () {
     courseCards();
     filters();
 });
+
+// modal dialog
+const dialogBox = document.querySelector("#dialogBox");
+
+function displayCourseDetails(course) {
+  dialogBox.innerHTML = '';
+  dialogBox.innerHTML = `
+    <button id="closeButton">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+  dialogBox.showModal();
+  
+  closeButton.addEventListener("click", () => {
+    dialogBox.close();
+  });
+}

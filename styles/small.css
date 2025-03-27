@@ -173,10 +173,32 @@ h2 {
     border: 1px solid var(--primary-color);
     border-radius: 5px;
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 
-.card h3 {
-    text-align: center;
+.openButton{
+    padding: 3px 10px;
+    font-size: 0.9rem;
+}
+
+dialog{
+    width: 325px;
+    margin: auto;
+}
+
+dialog h3{
+    padding: 1rem;
+}
+
+#closeButton{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+::backdrop{
+    background-color: #ffffff80;
 }
 
 .completed {
