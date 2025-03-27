@@ -177,6 +177,21 @@ h2 {
     justify-content: space-between;
 }
 
+.completed {
+    background-color: var(--secondary-color);
+
+}
+
+.not-completed {
+    background-color: var(--accent-color);
+}
+
+.certificate p {
+    font-weight: bold;
+    padding: 1rem;
+}
+
+/* dialog modal */
 .openButton{
     padding: 3px 10px;
     font-size: 0.9rem;
@@ -201,19 +216,35 @@ dialog h3{
     background-color: #ffffff80;
 }
 
-.completed {
-    background-color: var(--secondary-color);
+@keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 
-}
-
-.not-completed {
-    background-color: var(--accent-color);
-}
-
-.certificate p {
-    font-weight: bold;
-    padding: 1rem;
-}
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .slide-in-left {
+    animation: slideInLeft 1.5s ease-out;
+  }
+  
+  .slide-in-right {
+    animation: slideInRight 1.5s ease-out;
+  }
 
 /* footer */
 footer {
