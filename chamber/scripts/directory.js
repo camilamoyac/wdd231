@@ -29,7 +29,7 @@ function displayResults(data) {
         let address = document.createElement("p");
 
         if (company.memberLevel == 1) {
-            card.setAttribute("class", "member");
+            card.setAttribute("class", "bronze");
         }
         else if (company.memberLevel == 2) {
             card.setAttribute("class", "silver");
