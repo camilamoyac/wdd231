@@ -1,4 +1,8 @@
 @media screen and (min-width: 500px) {
+    header{
+        min-height: 150px;
+    }
+    
     .logo img {
         width: 130px;
         height: auto;
@@ -25,6 +29,7 @@
 
     main {
         max-width: 1200px;
+        min-height: 470px;
     }
 
     /* call to action */
@@ -85,7 +90,41 @@
         padding: 1rem;
     }
 
+    /* form */
+    .join-layout {
+        display: flex;
+        justify-content: space-around;
+        min-height: 1200px;
+    }
+
+    form {
+        width: 500px;
+    }
+
+    /* results */
+
+
+    #results{
+        width: 70%;
+    }
+
+    /* membership levels */
+    .level-options{
+        gap: 3rem;
+    }
+    
+    .level-options section{
+        width: 450px;
+    }
+
+    /* dialog */
+    dialog{
+        top: 20%;
+    }
+
+    /* footer */
     footer {
+        min-height: 130px;
         display: flex;
         padding: 0.5rem 4rem;
         justify-content: space-between;

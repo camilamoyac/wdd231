@@ -21,6 +21,7 @@ body {
 
 /* header */
 header {
+    min-height: 110px;
     background-color: var(--primary);
     border-bottom: 5px solid var(--primary-accent);
     display: flex;
@@ -122,6 +123,7 @@ header {
 
 /* main */
 main {
+    min-height: 480px;
     margin: 0 auto;
     padding-bottom: 1rem;
     width: 95%;
@@ -171,7 +173,8 @@ main {
     margin: 0 auto;
 }
 
-.main-content h2 {
+.main-content h2,
+form h2 {
     background-color: var(--primary);
     color: var(--light);
     padding: 0.5rem 1rem;
@@ -282,16 +285,15 @@ main {
     font-weight: bold;
 }
 
-.cards .silver,
-.spotlights .silver {
+.silver {
     border: 5px solid #bcc6cc;
 }
 
-.cards .gold,
-.spotlights .gold {
+.gold {
     border: 5px solid #d3af37;
 }
 
+/* list style */
 .list {
     display: flex;
     flex-direction: column;
@@ -338,8 +340,198 @@ main {
     background-color: #d7effc;
 }
 
+/* form */
+form {
+    background-color: var(--primary-accent);
+    padding: 0.5rem;
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+
+form label,
+form input,
+form textarea,
+form p {
+    display: block;
+}
+
+form label,
+form p {
+    padding: 1rem 0.5rem;
+    font-size: 1.2rem;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0.5rem;
+}
+
+form input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.radio-group label {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+form textarea {
+    width: 100%;
+    height: 150px;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+form input[type="submit"] {
+    padding: 0.5rem;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.25rem;
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+/* confirmation message */
+#results{
+    width: 100%;
+    background-color: var(--secondary-accent);
+    border: 3px solid var(--secondary);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+#results h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0.5rem;
+}
+
+#results p{
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* membership levels */
+.join-layout {
+    min-height: 1750px;
+}
+
+.join-layout h2 {
+    margin-bottom: 1rem;
+}
+
+.level-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.level-options section {
+    background-color: var(--secondary-accent);
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.level-options h3 {
+    font-size: 2rem;
+    font-family: "Playfair", serif;
+    background-color: var(--secondary);
+    color: var(--light);
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.level-options button {
+    display: block;
+    padding: 0.25rem 0.5rem;
+    margin: 1rem auto;
+}
+
+/* animation */
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(200%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.level-options .np-member {
+    animation: slideInRight 0.5s ease-in;
+}
+
+.level-options .bronze {
+    animation: slideInRight 1s ease-in;
+}
+
+.level-options .silver {
+    animation: slideInRight 1.5s ease-in;
+}
+
+.level-options .gold {
+    animation: slideInRight 2s ease-in;
+}
+
+/* dialog */
+::backdrop {
+    background-color: #FAFFED80;
+}
+
+dialog {
+    margin: 0 auto;
+    top: 15%;
+}
+
+dialog h3 {
+    font-size: 2rem;
+    padding: 0.5rem;
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+dialog p,
+dialog li {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+dialog ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+dialog button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.5rem;
+}
+
 /* footer */
 footer {
+    min-height: 300px;
     padding: 1rem;
     background-color: var(--primary);
     border-top: 5px solid var(--primary-accent);
