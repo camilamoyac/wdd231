@@ -20,19 +20,33 @@ body {
 
 /* header */
 header {
+    min-height: 115px;
     background-color: var(--dark);
     color: var(--light);
+    border-bottom: 5px solid var(--primary-accent);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    position: relative;
+    z-index: 1000;
+}
+
+.logo {
     display: flex;
     align-items: center;
 }
 
-header img {
+.logo img {
+    width: 80px;
+    height: auto;
     margin: 0.5rem;
 }
 
 h1 {
     font-size: 3rem;
-    padding: 1rem;
+    color: var(--light);
+    margin: 0 auto;
 }
 
 h1,
@@ -42,46 +56,219 @@ h2 {
     font-weight: 300;
 }
 
-p,
-li {
-    font-family: "Red Hat Text", sans-serif;
-    padding: 0.5rem;
+/* navigation */
+.navigation {
+    display: none;
+    list-style: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1100;
+    top: 99px;
+    right: 0;
+    background-color: var(--primary-accent);
+    width: 100%;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation li {
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+}
+
+.navigation a {
+    color: var(--light);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
     font-size: 1.25rem;
+}
+
+.navigation a:hover {
+    background-color: var(--primary);
+    color: black;
+}
+
+.active a {
+    color: black;
+    background-color: var(--light);
+}
+
+/* hamburger button */
+#hamburger {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--light);
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    display: block;
+}
+
+#hamburger::before {
+    content: "≡";
+}
+
+#hamburger.open::before {
+    content: "✖";
 }
 
 /* main */
 main {
-    width: 60%;
+    width: 95%;
     margin: 0 auto;
 }
 
-div {
-    background-color: var(--primary);
-    border: 2px solid var(--primary-accent);
-    border-radius: 7px;
-    margin: 1rem 0;
-}
-
-div img {
-    display: block;
-    margin: 0 auto;
-    padding: 1rem;
-}
-
-h2 {
-    background-color: var(--primary-accent);
-    padding: 0.25rem 1rem;
+h2{
     font-size: 2rem;
+    padding: 1rem 0.5rem 0.25rem 0.25rem;
+    text-align: center;
+}
+
+p{
+    padding: 0.25rem 0.5rem;
+}
+
+/* hero image */
+.hero {
+    width: 99.5vw;
+    position: relative;
+    z-index: 500;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    min-height: 330px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* call to action */
+.hero a {
+    position: absolute;
+    top: 37%;
+    right: 5%;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    background-color: var(--secondary-accent);
+    color: black;
+    border: 2px solid var(--secondary);
+    border-radius: 10px;
+    font-family: "IM Fell DW Pica", serif;
+    font-style: italic;
+    width: 150px;
+    text-align: center;
+}
+
+.hero a:hover {
+    background-color: var(--secondary);
+    color: black;
+    border: 2px solid var(--secondary-accent);
+}
+
+p,
+li,
+label {
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 1.2rem;
 }
 
 li {
     margin-left: 2rem;
 }
 
+.welcome {
+    min-height: 430px;
+}
+
+.recipe-cards {
+    min-height: 1000px;
+}
+
+/* form */
+form {
+    min-height: 500px;
+    background-color: var(--primary);
+    border: 5px solid var(--primary-accent);
+    border-radius: 20px;
+    padding: 0.5rem;
+    max-width: 100%;
+    margin: 0 auto 2rem auto;
+}
+
+form label,
+form input,
+form textarea{
+    display: block;
+}
+
+form label{
+    padding: 1rem 0.5rem;
+    font-size: 1.4rem;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+form textarea {
+    width: 100%;
+    height: 150px;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+form input[type="submit"] {
+    padding: 1rem;
+    width: 80%;
+    margin: 1rem auto;
+    font-size: 1.7rem;
+    font-family: "IM Fell DW Pica", serif;
+    font-style: italic;
+    color: black;
+    background-color: var(--secondary-accent);
+    border: 2px solid var(--secondary);
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--secondary);
+    border: 2px solid var(--secondary-accent);
+}
+
+.cookbook-cards{
+    min-height: 500px;
+}
+
 /* footer */
 footer {
-    text-align: center;
-    background-color: var(--dark);
-    color: var(--light);
+    min-height: 350px;
     padding: 1rem;
+    background-color: var(--dark);
+    border-top: 5px solid var(--primary-accent);
+    display: block;
+    color: var(--light);
+}
+
+.contact,
+.social,
+.footinfo {
+    padding: 0.5rem;
+    flex: 1;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bold {
+    font-weight: bold;
 }
