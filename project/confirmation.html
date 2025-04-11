@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="This is the confirmation page for recipes uploaded to your cookbook in the Honest Kitchen website, made for WDD231 by Camila Moya.">
+    <meta name="author" content="Camila Sol Moya Casanova">
+    <title>Confirmation Page | Honest Kitchen</title>
+
+    <meta property="og:title" content="Honest Kitchen Homepage">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero_small.webp">
+    <meta property="og:url" content="https://camilamoyac.github.io/wdd231/project">
+    <meta property="og:description"
+        content="This is the confirmation page for recipes uploaded to your cookbook in the Honest Kitchen website, made for WDD231 by Camila Moya.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+
+    <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Honest kitchen logo." width="130" height="130">
+            <h1>Honest Kitchen</h1>
+        </div>
+        <button type="button" id="hamburger" aria-label="Open navigation menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="add-recipe.html" id="add-recipe">Add Recipe</a></li>
+                <li><a href="my-cookbook.html" id="my-cookbook">My Cookbook</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Confirmation Page: Your recipe has been added successfully!</h2>
+        <div id="results">
+            <!-- populate with javascript -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <p class="bold">Honest Kitchen</p>
+            <p>contact@honestkitchen.com</p>
+            <p>+56 9 9876 9876</p>
+        </div>
+        <div class="social">
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="images/youtube.png" alt="YouTube icon" width="50" height="50" loading="lazy">
+            </a>
+            <a href="https://www.linkedin.com/in/camila-moya-casanova-63b28b165/" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn icon" width="50" height="50" loading="lazy">
+            </a>
+            <a href="https://x.com/home?lang=en" target="_blank">
+                <img src="images/twitter.png" alt="Twitter icon" width="50" height="50" loading="lazy">
+            </a>
+        </div>
+        <div class="footinfo">
+            <p>WDD231 Class Project</p>
+            <p>Camila Sol Moya Casanova</p>
+            <p>©<span id="currentyear"></span> Honest Kitchen</p>
+            <p id="lastmodified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="This is the homepage for the Honest Kitchen website, which provides recipes with their nutritional information, for WDD231 by Camila Moya.">
+    <meta name="author" content="Camila Sol Moya Casanova">
+    <title>Homepage | Honest kitchen</title>
+
+    <meta property="og:title" content="Honest Kitchen Homepage">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero_small.webp">
+    <meta property="og:url" content="https://camilamoyac.github.io/wdd231/project">
+    <meta property="og:description"
+        content="This is the homepage for the Honest Kitchen website, which provides recipes with their nutritional information, for WDD231 by Camila Moya.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+
+    <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Honest kitchen logo." width="130" height="130">
+            <h1>Honest Kitchen</h1>
+        </div>
+        <button type="button" id="hamburger" aria-label="Open navigation menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li class="active"><a href="#" id="home">Home</a></li>
+                <li><a href="add-recipe.html" id="add-recipe">Add Recipe</a></li>
+                <li><a href="my-cookbook.html" id="my-cookbook">My Cookbook</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 501px)" srcset="images/hero.webp">
+                <img src="images/hero_small.webp" alt="Different drawings of plates of food." width="1600" height="600">
+            </picture>
+            <a href="add-recipe.html">Get the nutritional info for your own recipe!</a>
+        </div>
+        <section class="welcome">
+            <h2>Welcome to Honest Kitchen!</h2>
+            <p>A site in which you can find recipes that meet your nutritional needs, and upload
+                your own recipes to your cookbook, where you can find the nutritional information for each plate.</p>
+            <p>At Honest Kitchen we believe everyone should have access to know what's going in their body, so we
+                disclose
+                all available nutritional information in all our recipes, and we do our best to tell you what's in your
+                food.</p>
+            <p>To get your recipe's nutritional info, go to Add Recipe, fill out the recipe form, and then head to
+                My Cookbook, where you can find all your uploaded recipes, each with the nutritional data for one
+                serving. Have
+                fun!</p>
+        </section>
+        <h2>Recipes</h2>
+        <div class="recipe-cards">
+            <!-- populate with javascript -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <p class="bold">Honest Kitchen</p>
+            <p>contact@honestkitchen.com</p>
+            <p>+56 9 9876 9876</p>
+        </div>
+        <div class="social">
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="images/youtube.png" alt="YouTube icon" width="50" height="50" loading="lazy">
+            </a>
+            <a href="https://www.linkedin.com/in/camila-moya-casanova-63b28b165/" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn icon" width="50" height="50" loading="lazy">
+            </a>
+            <a href="https://x.com/home?lang=en" target="_blank">
+                <img src="images/twitter.png" alt="Twitter icon" width="50" height="50" loading="lazy">
+            </a>
+        </div>
+        <div class="footinfo">
+            <p>WDD231 Class Project</p>
+            <p>Camila Sol Moya Casanova</p>
+            <p>©<span id="currentyear"></span> Honest Kitchen</p>
+            <p id="lastmodified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
