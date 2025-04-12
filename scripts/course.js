@@ -136,19 +136,19 @@ document.addEventListener("DOMContentLoaded", function () {
 const dialogBox = document.querySelector("#dialogBox");
 
 function displayCourseDetails(course) {
-  dialogBox.innerHTML = '';
-  dialogBox.innerHTML = `
-    <button id="closeButton">❌</button>
-    <h2>${course.subject} ${course.number}</h2>
-    <h3>${course.title}</h3>
-    <p><strong>Credits</strong>: ${course.credits}</p>
-    <p><strong>Certificate</strong>: ${course.certificate}</p>
-    <p>${course.description}</p>
-    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
-  `;
-  dialogBox.showModal();
-  
-  closeButton.addEventListener("click", () => {
-    dialogBox.close();
-  });
+    dialogBox.innerHTML = '';
+    dialogBox.innerHTML = `
+        <button id="closeButton">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    dialogBox.showModal();
+    
+    closeButton.addEventListener("click", () => {
+        dialogBox.close();
+    });
 }
