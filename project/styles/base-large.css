@@ -73,6 +73,12 @@
         align-items: center;
     }
 
+    /* dialog */
+    dialog {
+        top: 10%;
+        width: 40%;
+    }
+
     /* form */
     .form-layout {
         display: grid;
@@ -86,6 +92,28 @@
 
     form input[type="submit"] {
         width: 50%;
+    }
+
+    /* cookbook */
+    .cookbook-container .placeholder {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cookbook-container .placeholder img {
+        border: none;
+        width: 500px;
+        height: 350px;
+    }
+    
+    .cookbook-container .placeholder p {
+        padding-top: 3rem;
+        width: 300px;
+    }
+
+    .cookbook-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5rem;
     }
 
     /* footer */

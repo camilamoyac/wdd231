@@ -29,6 +29,7 @@
 
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/form.js" defer></script>
 
     <link rel="icon" href="favicon.png">
 </head>
@@ -52,15 +53,15 @@
     <main>
         <h2>Add your own recipe</h2>
         <div class="form-layout">
-            <form method="get" action="confirmation.html">
+            <form id="recipeForm" method="get" action="confirmation.html">
                 <p>All fields are required</p>
 
                 <label>Recipe Title<input type="text" id="recipe-title" name="title" required></label>
 
                 <label>Image URL<input type="url" id="image-url" name="image-url" required></label>
 
-                <label>Ingredients (separate with commas)<textarea id="ingredients" name="ingredients" rows="4"
-                        placeholder="Example: 1 cup rice, 2 eggs..." required></textarea></label>
+                <label>Ingredients (press enter after each ingredient)<textarea id="ingredients" name="ingredients"
+                        rows="4" placeholder="Example:&#10;1 cup rice&#10;2 eggs" required></textarea></label>
 
                 <label>Instructions<textarea id="instructions" name="instructions" rows="6"
                         placeholder="Example: First, boil the eggs, then put oil in a pan..."

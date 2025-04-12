@@ -48,5 +48,39 @@ function displayResults(data) {
         card.appendChild(division)
 
         cardContainer.appendChild(card);
+
+        button.addEventListener('click', () => {
+            displayRecipeDetails(recipe);
+        });
+    });
+}
+
+// modal dialog
+const dialogBox = document.querySelector("#dialogBox");
+
+function displayRecipeDetails(recipe) {
+    const ingredientsList = recipe.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('');
+
+    dialogBox.innerHTML = `
+    <button id="closeButton">✖</button>
+    <h2>${recipe.name}</h2>
+    <h3>Ingredients:</h3>
+    <ul>
+        ${ingredientsList}
+    </ul>
+    <h3>Instructions:</h3>
+    <p>${recipe.instructions}</p>
+    <h3>Nutritional Information (for one serving):</h3>
+    <p><strong>Calories</strong>: ${recipe.nutritional_info.calories} kcal</p>
+    <p><strong>Fat</strong>: ${recipe.nutritional_info.fat} g</p>
+    <p><strong>Protein</strong>: ${recipe.nutritional_info.protein} g</p>
+    <p><strong>Carbohydrates</strong>: ${recipe.nutritional_info.carbohydrates} g</p>
+        <p><strong>Sodium</strong>: ${recipe.nutritional_info.sodium} mg</p>
+        <p><strong>Dietary Fiber</strong>: ${recipe.nutritional_info.dietary_fiber} g</p>
+    `;
+    dialogBox.showModal();
+
+    closeButton.addEventListener("click", () => {
+        dialogBox.close();
     });
 }
