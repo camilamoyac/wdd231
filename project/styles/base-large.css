@@ -1,9 +1,10 @@
-@media screen and (min-width: 500px){
+@media screen and (min-width: 500px) {
+
     /* header */
-    header{
+    header {
         min-height: 160px;
     }
-    
+
     .logo img {
         width: 130px;
         height: auto;
@@ -26,7 +27,7 @@
 
     #hamburger {
         display: none;
-    } 
+    }
 
     /* main */
     main {
@@ -34,7 +35,7 @@
     }
 
     /* call to action */
-    .hero{
+    .hero {
         min-height: 600px;
     }
 
@@ -46,17 +47,41 @@
         padding: 1rem;
     }
 
-    .welcome{
-        min-height: 210px;
+    .welcome {
+        min-height: 160px;
     }
 
-    .recipe-cards{
+    /* home layout */
+    .home-layout {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 1rem;
+        min-height: 4100px;
+    }
+
+    .recipe-cards {
         min-height: 500px;
     }
 
+    .recipe-cards img,
+    .recipe-cards button {
+        margin: 0.5rem;
+    }
+
+    .flex-div {
+        display: flex;
+        align-items: center;
+    }
+
     /* form */
-    form{
-        max-width: 700px;
+    .form-layout {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        gap: 1rem;
+    }
+
+    form {
+        width: 100%;
     }
 
     form input[type="submit"] {

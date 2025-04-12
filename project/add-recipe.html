@@ -51,22 +51,31 @@
 
     <main>
         <h2>Add your own recipe</h2>
-        <form method="get" action="confirmation.html">
-            <p>All fields are required</p>
-            
-            <label>Recipe Title<input type="text" id="recipe-title" name="title" required></label>
+        <div class="form-layout">
+            <form method="get" action="confirmation.html">
+                <p>All fields are required</p>
 
-            <label>Image URL<input type="url" id="image-url" name="image-url" required></label>
+                <label>Recipe Title<input type="text" id="recipe-title" name="title" required></label>
 
-            <label>Ingredients (separate with commas)<textarea id="ingredients" name="ingredients" rows="4"
-                    required></textarea></label>
+                <label>Image URL<input type="url" id="image-url" name="image-url" required></label>
 
-            <label>Instructions<textarea id="instructions" name="instructions" rows="6" required></textarea></label>
+                <label>Ingredients (separate with commas)<textarea id="ingredients" name="ingredients" rows="4"
+                        placeholder="Example: 1 cup rice, 2 eggs..." required></textarea></label>
 
-            <label>Number of servings<input type="number" id="servings" name="servings" required></label>
+                <label>Instructions<textarea id="instructions" name="instructions" rows="6"
+                        placeholder="Example: First, boil the eggs, then put oil in a pan..."
+                        required></textarea></label>
 
-            <input type="submit" value="Upload recipe to cookbook">
-        </form>
+                <label>Number of servings<input type="number" id="servings" name="servings" required></label>
+
+                <input type="submit" value="Upload recipe to cookbook">
+            </form>
+            <aside>
+                <h3>Got a favorite recipe?</h3>
+                <p>Add it here and we'll calculate its nutritional content per serving. It's fast and easy, start with
+                    the name!</p>
+            </aside>
+        </div>
     </main>
 
     <footer>

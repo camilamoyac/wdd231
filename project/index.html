@@ -29,6 +29,7 @@
 
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/recipe-cards.js" defer></script>
 
     <link rel="icon" href="favicon.png">
 </head>
@@ -55,7 +56,7 @@
                 <source media="(min-width: 501px)" srcset="images/hero.webp">
                 <img src="images/hero_small.webp" alt="Different drawings of plates of food." width="1600" height="600">
             </picture>
-            <a href="add-recipe.html">Get the nutritional info for your own recipe!</a>
+            <a>Get the nutritional info for your own recipe!</a>
         </div>
         <section class="welcome">
             <h2>Welcome to Honest Kitchen!</h2>
@@ -65,14 +66,22 @@
                 disclose
                 all available nutritional information in all our recipes, and we do our best to tell you what's in your
                 food.</p>
-            <p>To get your recipe's nutritional info, go to Add Recipe, fill out the recipe form, and then head to
-                My Cookbook, where you can find all your uploaded recipes, each with the nutritional data for one
-                serving. Have
-                fun!</p>
         </section>
         <h2>Recipes</h2>
-        <div class="recipe-cards">
-            <!-- populate with javascript -->
+        <div class="home-layout">
+            <div class="recipe-cards">
+                <!-- populate with javascript -->
+            </div>
+            <aside>
+                <h3>How can I get the nutritional information for my own recipe?</h2>
+                    <p>To get your recipe's nutritional info, first, go to <a href="add-recipe.html">Add Recipe</a> and
+                        fill out the recipe form, follow the requirements precisely (for example, list the ingredients
+                        with commas in between) for best results.</p>
+                    <p>Then, head to <a href="my-cookbook.html">My Cookbook</a>, where you will find this recipe and all
+                        the ones you uploaded in the past. Click on the see full recipe button, and you will see the
+                        nutritional data for one serving.</p>
+                    <p>Have fun!</p>
+            </aside>
         </div>
     </main>
 

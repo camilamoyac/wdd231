@@ -1,331 +1,333 @@
-[
-    {
-        "name": "Avocado Toast",
-        "image_url": "https://example.com/images/avocado_toast.jpg",
-        "description": "A simple and nutritious breakfast with creamy avocado on toasted bread.",
-        "ingredients": [
-            "1 slice of whole grain bread",
-            "1/2 ripe avocado",
-            "Salt and pepper to taste",
-            "Chili flakes (optional)",
-            "Lemon juice (optional)"
-        ],
-        "instructions": "Toast the bread. Mash the avocado with a fork and season with salt, pepper, and lemon juice. Spread on the toast and sprinkle chili flakes if desired.",
-        "servings": 1,
-        "nutritional_info": {
-            "calories": 240,
-            "fat": 14,
-            "protein": 4,
-            "carbohydrates": 22,
-            "sodium": 150,
-            "dietary_fiber": 7
+{
+    "recipes": [
+        {
+            "name": "Avocado Toast",
+            "image_url": "./images/avo-toast.jpg",
+            "description": "A simple and nutritious breakfast with creamy avocado on toasted bread.",
+            "ingredients": [
+                "1 slice of whole grain bread",
+                "1/2 ripe avocado",
+                "Salt and pepper to taste",
+                "Chili flakes (optional)",
+                "Lemon juice (optional)"
+            ],
+            "instructions": "Toast the bread. Mash the avocado with a fork and season with salt, pepper, and lemon juice. Spread on the toast and sprinkle chili flakes if desired.",
+            "servings": 1,
+            "nutritional_info": {
+                "calories": 240,
+                "fat": 14,
+                "protein": 4,
+                "carbohydrates": 22,
+                "sodium": 150,
+                "dietary_fiber": 7
+            }
+        },
+        {
+            "name": "Chicken Caesar Salad",
+            "image_url": "./images/cae-salad.jpg",
+            "description": "A fresh salad with grilled chicken, romaine lettuce, croutons, and Caesar dressing.",
+            "ingredients": [
+                "2 cups romaine lettuce",
+                "1 grilled chicken breast",
+                "2 tbsp Caesar dressing",
+                "1/4 cup croutons",
+                "2 tbsp grated Parmesan cheese"
+            ],
+            "instructions": "Chop the lettuce and chicken. Toss with Caesar dressing, croutons, and cheese.",
+            "servings": 1,
+            "nutritional_info": {
+                "calories": 450,
+                "fat": 25,
+                "protein": 30,
+                "carbohydrates": 18,
+                "sodium": 700,
+                "dietary_fiber": 3
+            }
+        },
+        {
+            "name": "Spaghetti Aglio e Olio",
+            "image_url": "./images/spa-aeo.jpg",
+            "description": "A classic Italian pasta dish with garlic, olive oil, and chili flakes.",
+            "ingredients": [
+                "100g spaghetti",
+                "2 cloves garlic, sliced",
+                "2 tbsp olive oil",
+                "1/4 tsp red pepper flakes",
+                "Salt and parsley to taste"
+            ],
+            "instructions": "Cook pasta. In a pan, sauté garlic and pepper flakes in olive oil. Add cooked pasta, toss, and season.",
+            "servings": 1,
+            "nutritional_info": {
+                "calories": 400,
+                "fat": 14,
+                "protein": 10,
+                "carbohydrates": 58,
+                "sodium": 100,
+                "dietary_fiber": 3
+            }
+        },
+        {
+            "name": "Pancakes",
+            "image_url": "./images/pancakes.jpg",
+            "description": "Fluffy pancakes perfect for breakfast or brunch.",
+            "ingredients": [
+                "1 cup flour",
+                "1 tbsp sugar",
+                "1 tsp baking powder",
+                "1 egg",
+                "3/4 cup milk",
+                "1 tbsp melted butter"
+            ],
+            "instructions": "Mix dry ingredients. Add egg, milk, and butter. Cook on a hot griddle until golden brown on both sides.",
+            "servings": 2,
+            "nutritional_info": {
+                "calories": 300,
+                "fat": 10,
+                "protein": 8,
+                "carbohydrates": 44,
+                "sodium": 320,
+                "dietary_fiber": 1
+            }
+        },
+        {
+            "name": "Tuna Salad Sandwich",
+            "image_url": "./images/tun-ss.jpg",
+            "description": "A protein-rich sandwich made with tuna, mayo, and crunchy veggies.",
+            "ingredients": [
+                "1 can tuna",
+                "2 tbsp mayonnaise",
+                "1 stalk celery, chopped",
+                "2 slices of whole wheat bread",
+                "Lettuce leaves"
+            ],
+            "instructions": "Mix tuna, mayo, and celery. Spread on bread with lettuce. Serve as a sandwich.",
+            "servings": 1,
+            "nutritional_info": {
+                "calories": 350,
+                "fat": 18,
+                "protein": 28,
+                "carbohydrates": 24,
+                "sodium": 600,
+                "dietary_fiber": 3
+            }
+        },
+        {
+            "name": "Fruit and Yogurt Parfait",
+            "image_url": "./images/fru-yp.jpg",
+            "description": "Layers of yogurt, fresh fruit, and granola make a delicious and healthy snack.",
+            "ingredients": [
+                "1/2 cup Greek yogurt",
+                "1/2 cup mixed berries",
+                "1/4 cup granola",
+                "1 tsp honey"
+            ],
+            "instructions": "Layer yogurt, fruit, and granola in a glass. Drizzle with honey and serve.",
+            "servings": 1,
+            "nutritional_info": {
+                "calories": 250,
+                "fat": 6,
+                "protein": 12,
+                "carbohydrates": 32,
+                "sodium": 70,
+                "dietary_fiber": 4
+            }
+        },
+        {
+            "name": "Vegetable Stir Fry",
+            "image_url": "./images/veg-sf.jpg",
+            "description": "Quick stir-fried vegetables with soy sauce and garlic.",
+            "ingredients": [
+                "1 cup broccoli florets",
+                "1/2 bell pepper, sliced",
+                "1/2 carrot, sliced",
+                "1 tbsp soy sauce",
+                "1 clove garlic, minced",
+                "1 tsp oil"
+            ],
+            "instructions": "Heat oil in pan, sauté garlic and vegetables, add soy sauce, and stir-fry for 5 minutes.",
+            "servings": 1,
+            "nutritional_info": {
+                "calories": 150,
+                "fat": 6,
+                "protein": 4,
+                "carbohydrates": 20,
+                "sodium": 300,
+                "dietary_fiber": 5
+            }
+        },
+        {
+            "name": "Baked Salmon",
+            "image_url": "./images/bak-salmon.jpg",
+            "description": "Tender baked salmon with lemon and herbs.",
+            "ingredients": [
+                "1 salmon fillet",
+                "1 tbsp olive oil",
+                "Salt and pepper to taste",
+                "Lemon slices",
+                "1 tsp dried dill"
+            ],
+            "instructions": "Season salmon with oil, herbs, and lemon. Bake at 375°F (190°C) for 15-20 minutes.",
+            "servings": 1,
+            "nutritional_info": {
+                "calories": 360,
+                "fat": 22,
+                "protein": 34,
+                "carbohydrates": 1,
+                "sodium": 180,
+                "dietary_fiber": 0
+            }
+        },
+        {
+            "name": "Grilled Chicken Wrap",
+            "image_url": "./images/gri-cw.jpg",
+            "description": "Healthy grilled chicken wrapped with fresh veggies in a tortilla.",
+            "ingredients": [
+                "1 whole wheat tortilla",
+                "1/2 grilled chicken breast, sliced",
+                "Lettuce",
+                "Tomato slices",
+                "1 tbsp hummus"
+            ],
+            "instructions": "Spread hummus on tortilla, add chicken and veggies, wrap and serve.",
+            "servings": 1,
+            "nutritional_info": {
+                "calories": 320,
+                "fat": 10,
+                "protein": 28,
+                "carbohydrates": 30,
+                "sodium": 450,
+                "dietary_fiber": 4
+            }
+        },
+        {
+            "name": "Macaroni and Cheese",
+            "image_url": "./images/mac-cheese.jpg",
+            "description": "Creamy macaroni and cheese made from scratch.",
+            "ingredients": [
+                "1 cup elbow macaroni",
+                "1 tbsp butter",
+                "1 tbsp flour",
+                "1 cup milk",
+                "1 cup shredded cheddar cheese"
+            ],
+            "instructions": "Cook pasta. Make a roux with butter and flour, add milk, then cheese. Mix with pasta.",
+            "servings": 2,
+            "nutritional_info": {
+                "calories": 500,
+                "fat": 20,
+                "protein": 18,
+                "carbohydrates": 60,
+                "sodium": 600,
+                "dietary_fiber": 2
+            }
+        },
+        {
+            "name": "Chocolate Mug Cake",
+            "image_url": "./images/cho-mc.jpg",
+            "description": "A quick dessert made in the microwave.",
+            "ingredients": [
+                "4 tbsp flour",
+                "2 tbsp cocoa powder",
+                "2 tbsp sugar",
+                "3 tbsp milk",
+                "1 tbsp oil",
+                "1/4 tsp baking powder"
+            ],
+            "instructions": "Mix ingredients in a mug. Microwave for 1-2 minutes until set.",
+            "servings": 1,
+            "nutritional_info": {
+                "calories": 300,
+                "fat": 12,
+                "protein": 4,
+                "carbohydrates": 42,
+                "sodium": 120,
+                "dietary_fiber": 2
+            }
+        },
+        {
+            "name": "Classic BLT Sandwich",
+            "image_url": "./images/cla-blt.jpg",
+            "description": "Bacon, lettuce, and tomato sandwich on toasted bread.",
+            "ingredients": [
+                "2 slices of bread",
+                "3 strips bacon",
+                "Lettuce",
+                "Tomato slices",
+                "1 tbsp mayonnaise"
+            ],
+            "instructions": "Cook bacon. Toast bread. Assemble sandwich with mayo, bacon, lettuce, and tomato.",
+            "servings": 1,
+            "nutritional_info": {
+                "calories": 420,
+                "fat": 24,
+                "protein": 14,
+                "carbohydrates": 34,
+                "sodium": 800,
+                "dietary_fiber": 2
+            }
+        },
+        {
+            "name": "Overnight Oats",
+            "image_url": "./images/ove-oats.jpg",
+            "description": "A healthy make-ahead breakfast with oats and chia seeds.",
+            "ingredients": [
+                "1/2 cup rolled oats",
+                "1/2 cup milk",
+                "1 tbsp chia seeds",
+                "1/4 cup berries",
+                "1 tsp honey"
+            ],
+            "instructions": "Combine all ingredients in a jar and refrigerate overnight. Eat chilled.",
+            "servings": 1,
+            "nutritional_info": {
+                "calories": 250,
+                "fat": 6,
+                "protein": 8,
+                "carbohydrates": 36,
+                "sodium": 60,
+                "dietary_fiber": 6
+            }
+        },
+        {
+            "name": "Hummus and Veggie Plate",
+            "image_url": "./images/hum-vp.jpg",
+            "description": "A quick and nutritious snack with hummus and assorted veggies.",
+            "ingredients": [
+                "1/4 cup hummus",
+                "1/2 cup carrot sticks",
+                "1/2 cup cucumber slices",
+                "1/2 bell pepper, sliced"
+            ],
+            "instructions": "Arrange vegetables on a plate and serve with hummus for dipping.",
+            "servings": 1,
+            "nutritional_info": {
+                "calories": 180,
+                "fat": 8,
+                "protein": 5,
+                "carbohydrates": 20,
+                "sodium": 250,
+                "dietary_fiber": 5
+            }
+        },
+        {
+            "name": "Cheese Quesadilla",
+            "image_url": "./images/che-quesadilla.jpg",
+            "description": "A quick Mexican-inspired snack with melted cheese inside a crispy tortilla.",
+            "ingredients": [
+                "1 flour tortilla",
+                "1/2 cup shredded cheese",
+                "1 tsp butter"
+            ],
+            "instructions": "Heat butter in a pan. Add tortilla with cheese, fold, and cook until golden.",
+            "servings": 1,
+            "nutritional_info": {
+                "calories": 320,
+                "fat": 18,
+                "protein": 10,
+                "carbohydrates": 26,
+                "sodium": 400,
+                "dietary_fiber": 2
+            }
         }
-    },
-    {
-        "name": "Chicken Caesar Salad",
-        "image_url": "https://example.com/images/chicken_caesar_salad.jpg",
-        "description": "A fresh salad with grilled chicken, romaine lettuce, croutons, and Caesar dressing.",
-        "ingredients": [
-            "2 cups romaine lettuce",
-            "1 grilled chicken breast",
-            "2 tbsp Caesar dressing",
-            "1/4 cup croutons",
-            "2 tbsp grated Parmesan cheese"
-        ],
-        "instructions": "Chop the lettuce and chicken. Toss with Caesar dressing, croutons, and cheese.",
-        "servings": 1,
-        "nutritional_info": {
-            "calories": 450,
-            "fat": 25,
-            "protein": 30,
-            "carbohydrates": 18,
-            "sodium": 700,
-            "dietary_fiber": 3
-        }
-    },
-    {
-        "name": "Spaghetti Aglio e Olio",
-        "image_url": "https://example.com/images/spaghetti_aglio_e_olio.jpg",
-        "description": "A classic Italian pasta dish with garlic, olive oil, and chili flakes.",
-        "ingredients": [
-            "100g spaghetti",
-            "2 cloves garlic, sliced",
-            "2 tbsp olive oil",
-            "1/4 tsp red pepper flakes",
-            "Salt and parsley to taste"
-        ],
-        "instructions": "Cook pasta. In a pan, sauté garlic and pepper flakes in olive oil. Add cooked pasta, toss, and season.",
-        "servings": 1,
-        "nutritional_info": {
-            "calories": 400,
-            "fat": 14,
-            "protein": 10,
-            "carbohydrates": 58,
-            "sodium": 100,
-            "dietary_fiber": 3
-        }
-    },
-    {
-        "name": "Pancakes",
-        "image_url": "https://example.com/images/pancakes.jpg",
-        "description": "Fluffy pancakes perfect for breakfast or brunch.",
-        "ingredients": [
-            "1 cup flour",
-            "1 tbsp sugar",
-            "1 tsp baking powder",
-            "1 egg",
-            "3/4 cup milk",
-            "1 tbsp melted butter"
-        ],
-        "instructions": "Mix dry ingredients. Add egg, milk, and butter. Cook on a hot griddle until golden brown on both sides.",
-        "servings": 2,
-        "nutritional_info": {
-            "calories": 300,
-            "fat": 10,
-            "protein": 8,
-            "carbohydrates": 44,
-            "sodium": 320,
-            "dietary_fiber": 1
-        }
-    },
-    {
-        "name": "Tuna Salad Sandwich",
-        "image_url": "https://example.com/images/tuna_salad_sandwich.jpg",
-        "description": "A protein-rich sandwich made with tuna, mayo, and crunchy veggies.",
-        "ingredients": [
-            "1 can tuna",
-            "2 tbsp mayonnaise",
-            "1 stalk celery, chopped",
-            "2 slices of whole wheat bread",
-            "Lettuce leaves"
-        ],
-        "instructions": "Mix tuna, mayo, and celery. Spread on bread with lettuce. Serve as a sandwich.",
-        "servings": 1,
-        "nutritional_info": {
-            "calories": 350,
-            "fat": 18,
-            "protein": 28,
-            "carbohydrates": 24,
-            "sodium": 600,
-            "dietary_fiber": 3
-        }
-    },
-    {
-        "name": "Fruit and Yogurt Parfait",
-        "image_url": "https://example.com/images/yogurt_parfait.jpg",
-        "description": "Layers of yogurt, fresh fruit, and granola make a delicious and healthy snack.",
-        "ingredients": [
-            "1/2 cup Greek yogurt",
-            "1/2 cup mixed berries",
-            "1/4 cup granola",
-            "1 tsp honey"
-        ],
-        "instructions": "Layer yogurt, fruit, and granola in a glass. Drizzle with honey and serve.",
-        "servings": 1,
-        "nutritional_info": {
-            "calories": 250,
-            "fat": 6,
-            "protein": 12,
-            "carbohydrates": 32,
-            "sodium": 70,
-            "dietary_fiber": 4
-        }
-    },
-    {
-        "name": "Vegetable Stir Fry",
-        "image_url": "https://example.com/images/vegetable_stir_fry.jpg",
-        "description": "Quick stir-fried vegetables with soy sauce and garlic.",
-        "ingredients": [
-            "1 cup broccoli florets",
-            "1/2 bell pepper, sliced",
-            "1/2 carrot, sliced",
-            "1 tbsp soy sauce",
-            "1 clove garlic, minced",
-            "1 tsp oil"
-        ],
-        "instructions": "Heat oil in pan, sauté garlic and vegetables, add soy sauce, and stir-fry for 5 minutes.",
-        "servings": 1,
-        "nutritional_info": {
-            "calories": 150,
-            "fat": 6,
-            "protein": 4,
-            "carbohydrates": 20,
-            "sodium": 300,
-            "dietary_fiber": 5
-        }
-    },
-    {
-        "name": "Baked Salmon",
-        "image_url": "https://example.com/images/baked_salmon.jpg",
-        "description": "Tender baked salmon with lemon and herbs.",
-        "ingredients": [
-            "1 salmon fillet",
-            "1 tbsp olive oil",
-            "Salt and pepper to taste",
-            "Lemon slices",
-            "1 tsp dried dill"
-        ],
-        "instructions": "Season salmon with oil, herbs, and lemon. Bake at 375°F (190°C) for 15-20 minutes.",
-        "servings": 1,
-        "nutritional_info": {
-            "calories": 360,
-            "fat": 22,
-            "protein": 34,
-            "carbohydrates": 1,
-            "sodium": 180,
-            "dietary_fiber": 0
-        }
-    },
-    {
-        "name": "Grilled Chicken Wrap",
-        "image_url": "https://example.com/images/grilled_chicken_wrap.jpg",
-        "description": "Healthy grilled chicken wrapped with fresh veggies in a tortilla.",
-        "ingredients": [
-            "1 whole wheat tortilla",
-            "1/2 grilled chicken breast, sliced",
-            "Lettuce",
-            "Tomato slices",
-            "1 tbsp hummus"
-        ],
-        "instructions": "Spread hummus on tortilla, add chicken and veggies, wrap and serve.",
-        "servings": 1,
-        "nutritional_info": {
-            "calories": 320,
-            "fat": 10,
-            "protein": 28,
-            "carbohydrates": 30,
-            "sodium": 450,
-            "dietary_fiber": 4
-        }
-    },
-    {
-        "name": "Macaroni and Cheese",
-        "image_url": "https://example.com/images/mac_and_cheese.jpg",
-        "description": "Creamy macaroni and cheese made from scratch.",
-        "ingredients": [
-            "1 cup elbow macaroni",
-            "1 tbsp butter",
-            "1 tbsp flour",
-            "1 cup milk",
-            "1 cup shredded cheddar cheese"
-        ],
-        "instructions": "Cook pasta. Make a roux with butter and flour, add milk, then cheese. Mix with pasta.",
-        "servings": 2,
-        "nutritional_info": {
-            "calories": 500,
-            "fat": 20,
-            "protein": 18,
-            "carbohydrates": 60,
-            "sodium": 600,
-            "dietary_fiber": 2
-        }
-    },
-    {
-        "name": "Chocolate Mug Cake",
-        "image_url": "https://example.com/images/mug_cake.jpg",
-        "description": "A quick dessert made in the microwave.",
-        "ingredients": [
-            "4 tbsp flour",
-            "2 tbsp cocoa powder",
-            "2 tbsp sugar",
-            "3 tbsp milk",
-            "1 tbsp oil",
-            "1/4 tsp baking powder"
-        ],
-        "instructions": "Mix ingredients in a mug. Microwave for 1-2 minutes until set.",
-        "servings": 1,
-        "nutritional_info": {
-            "calories": 300,
-            "fat": 12,
-            "protein": 4,
-            "carbohydrates": 42,
-            "sodium": 120,
-            "dietary_fiber": 2
-        }
-    },
-    {
-        "name": "Classic BLT Sandwich",
-        "image_url": "https://example.com/images/blt_sandwich.jpg",
-        "description": "Bacon, lettuce, and tomato sandwich on toasted bread.",
-        "ingredients": [
-            "2 slices of bread",
-            "3 strips bacon",
-            "Lettuce",
-            "Tomato slices",
-            "1 tbsp mayonnaise"
-        ],
-        "instructions": "Cook bacon. Toast bread. Assemble sandwich with mayo, bacon, lettuce, and tomato.",
-        "servings": 1,
-        "nutritional_info": {
-            "calories": 420,
-            "fat": 24,
-            "protein": 14,
-            "carbohydrates": 34,
-            "sodium": 800,
-            "dietary_fiber": 2
-        }
-    },
-    {
-        "name": "Overnight Oats",
-        "image_url": "https://example.com/images/overnight_oats.jpg",
-        "description": "A healthy make-ahead breakfast with oats and chia seeds.",
-        "ingredients": [
-            "1/2 cup rolled oats",
-            "1/2 cup milk",
-            "1 tbsp chia seeds",
-            "1/4 cup berries",
-            "1 tsp honey"
-        ],
-        "instructions": "Combine all ingredients in a jar and refrigerate overnight. Eat chilled.",
-        "servings": 1,
-        "nutritional_info": {
-            "calories": 250,
-            "fat": 6,
-            "protein": 8,
-            "carbohydrates": 36,
-            "sodium": 60,
-            "dietary_fiber": 6
-        }
-    },
-    {
-        "name": "Hummus and Veggie Plate",
-        "image_url": "https://example.com/images/hummus_plate.jpg",
-        "description": "A quick and nutritious snack with hummus and assorted veggies.",
-        "ingredients": [
-            "1/4 cup hummus",
-            "1/2 cup carrot sticks",
-            "1/2 cup cucumber slices",
-            "1/2 bell pepper, sliced"
-        ],
-        "instructions": "Arrange vegetables on a plate and serve with hummus for dipping.",
-        "servings": 1,
-        "nutritional_info": {
-            "calories": 180,
-            "fat": 8,
-            "protein": 5,
-            "carbohydrates": 20,
-            "sodium": 250,
-            "dietary_fiber": 5
-        }
-    },
-    {
-        "name": "Cheese Quesadilla",
-        "image_url": "https://example.com/images/cheese_quesadilla.jpg",
-        "description": "A quick Mexican-inspired snack with melted cheese inside a crispy tortilla.",
-        "ingredients": [
-            "1 flour tortilla",
-            "1/2 cup shredded cheese",
-            "1 tsp butter"
-        ],
-        "instructions": "Heat butter in a pan. Add tortilla with cheese, fold, and cook until golden.",
-        "servings": 1,
-        "nutritional_info": {
-            "calories": 320,
-            "fat": 18,
-            "protein": 10,
-            "carbohydrates": 26,
-            "sodium": 400,
-            "dietary_fiber": 2
-        }
-    }
-]
+    ]
+}
