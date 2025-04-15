@@ -1,25 +1,4 @@
-async function fetchNutrition(ingredientText, servings) {
-    const apiKey = "23d5085df35241b79a997659e9d88d51"; // Replace with your actual Spoonacular API key
-
-    const response = await fetch(`https://api.spoonacular.com/recipes/parseIngredients?apiKey=${apiKey}`, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-        },
-        body: new URLSearchParams({
-            ingredientList: ingredientText,
-            servings: 1,
-            includeNutrition: true
-        }),
-    });
-
-    if (!response.ok) {
-        throw new Error(`API error: ${response.status}`);
-    }
-
-    const data = await response.json();
-    return data;
-}
+import {fetchNutrition} from "./fetch.mjs";
 
 function displayUserRecipes(data) {
     // before recipes are added
@@ -100,7 +79,7 @@ async function displayModal(recipe) {
     dialogBox.innerHTML = `
     <button id="closeButton">✖</button>
     <h2>${recipe.title}</h2>
-    <h3>This recipe makes ${recipe.servings} servings.</h3>
+    <h3>This recipe makes ${recipe.servings} serving(s).</h3>
     <h3>Ingredients:</h3>
     <ul>
         ${ingredientsList}

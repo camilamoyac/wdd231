@@ -1,21 +1,17 @@
+import {fetchData} from "./fetch.mjs";
+
 const cardContainer = document.querySelector(".recipe-cards");
 
-async function fetchData() {
-    try {
-        const response = await fetch("./data/recipes.json");
-        if (response.ok) {
-            const data = await response.json();
-            console.log(data); // testing only
-            displayResults(data); // uncomment when ready
-        } else {
-            throw Error(await response.text());
-        }
-    } catch (error) {
-        console.log(error);
+async function init() {
+    const data = await fetchData();
+    if (data) {
+        displayResults(data);
+    } else {
+        console.error("No data received");
     }
 }
 
-fetchData();
+init();
 
 function displayResults(data) {
     data.recipes.forEach(recipe => {
