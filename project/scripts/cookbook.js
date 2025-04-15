@@ -28,7 +28,7 @@ function displayUserRecipes(data) {
         placeholder.classList.add("placeholder");
 
         placeholder.innerHTML = `
-          <img src="images/empty-cookbook.png" alt="Empty cookbook.">
+          <img src="images/empty-cookbook.png" alt="Empty cookbook." loading="lazy">
           <p>Your cookbook is empty. Add some delicious recipes to get started!</p>
         `;
 
