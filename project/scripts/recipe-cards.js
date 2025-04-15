@@ -64,6 +64,7 @@ function displayRecipeDetails(recipe) {
     dialogBox.innerHTML = `
     <button id="closeButton">✖</button>
     <h2>${recipe.name}</h2>
+    <h3>This recipe makes 1 serving.</h3>
     <h3>Ingredients:</h3>
     <ul>
         ${ingredientsList}
