@@ -1,5 +1,6 @@
 import {fetchNutrition} from "./fetch.mjs";
 
+// makes recipe cards
 function displayUserRecipes(data) {
     // before recipes are added
     if (data.length === 0) {
@@ -52,7 +53,7 @@ const dialogBox = document.querySelector("#dialogBox");
 async function displayModal(recipe) {
     const ingredientsList = recipe.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('');
 
-    // get nutrition
+    // gets info from API
     const nutDataArray = await Promise.all(
         recipe.ingredients.map(ingredient => fetchNutrition(ingredient, recipe.servings))
     );

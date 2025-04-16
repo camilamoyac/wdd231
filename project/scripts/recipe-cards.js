@@ -13,6 +13,7 @@ async function init() {
 
 init();
 
+// makes the cards
 function displayResults(data) {
     data.recipes.forEach(recipe => {
         let card = document.createElement("section");
