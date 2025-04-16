@@ -72,8 +72,8 @@ function displayRecipeDetails(recipe) {
     <p><strong>Fat</strong>: ${recipe.nutritional_info.fat} g</p>
     <p><strong>Protein</strong>: ${recipe.nutritional_info.protein} g</p>
     <p><strong>Carbohydrates</strong>: ${recipe.nutritional_info.carbohydrates} g</p>
-        <p><strong>Sodium</strong>: ${recipe.nutritional_info.sodium} mg</p>
-        <p><strong>Dietary Fiber</strong>: ${recipe.nutritional_info.dietary_fiber} g</p>
+    <p><strong>Sodium</strong>: ${recipe.nutritional_info.sodium} mg</p>
+    <p><strong>Dietary Fiber</strong>: ${recipe.nutritional_info.dietary_fiber} g</p>
     `;
     dialogBox.showModal();
 

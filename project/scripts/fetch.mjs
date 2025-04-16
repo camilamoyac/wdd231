@@ -1,4 +1,4 @@
-// JSON data fetch
+// JSON data fetch used in recipe-cards.js
 export async function fetchData() {
     try {
         const response = await fetch("./data/recipes.json");
@@ -13,9 +13,9 @@ export async function fetchData() {
     }
 }
 
-// API fetch
+// API fetch used in cookbook.js
 export async function fetchNutrition(ingredientText, servings) {
-    const apiKey = "23d5085df35241b79a997659e9d88d51"; // Replace with your actual Spoonacular API key
+    const apiKey = "23d5085df35241b79a997659e9d88d51";
 
     const response = await fetch(`https://api.spoonacular.com/recipes/parseIngredients?apiKey=${apiKey}`, {
         method: "POST",
