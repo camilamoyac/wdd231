@@ -1,0 +1,52 @@
+{
+    "items": [
+        {
+            "name": "Parque Mirador Peñalolén",
+            "address": "Av. José Arrieta 7651, Peñalolén, Santiago",
+            "description": "A scenic park with panoramic views of Santiago, hiking trails, and picnic areas.",
+            "image_url": "./images/parque_mirador.webp"
+        },
+        {
+            "name": "Centro Cultural Trawün",
+            "address": "Calle Quilín 4500, Peñalolén, Santiago",
+            "description": "A vibrant cultural center offering workshops, concerts, and local art exhibitions.",
+            "image_url": "./images/centro_cultural.webp"
+        },
+        {
+            "name": "Museo de la Memoria Local",
+            "address": "Av. Grecia 8500, Peñalolén, Santiago",
+            "description": "Small community museum showcasing the history and stories of Peñalolén residents.",
+            "image_url": "./images/museo_de.webp"
+        },
+        {
+            "name": "Cerro Las Rosas",
+            "address": "Camino al Cerro Las Rosas, Peñalolén, Santiago",
+            "description": "Popular hill for outdoor activities like hiking and mountain biking, with stunning sunsets.",
+            "image_url": "./images/cerro_las.webp"
+        },
+        {
+            "name": "Biblioteca Vecinal Los Pensamientos",
+            "address": "Pasaje Los Pensamientos 1234, Peñalolén, Santiago",
+            "description": "Cozy neighborhood library with a strong focus on children's literacy and community programs.",
+            "image_url": "./images/biblioteca_vecinal.webp"
+        },
+        {
+            "name": "Feria Orgánica El Encuentro",
+            "address": "Plaza El Encuentro, Peñalolén, Santiago",
+            "description": "Weekly organic market featuring fresh produce, handmade goods, and local food vendors.",
+            "image_url": "./images/feria_organica.webp"
+        },
+        {
+            "name": "Casa Taller ArteSur",
+            "address": "Calle El Valle 3210, Peñalolén, Santiago",
+            "description": "Artisan workshop and gallery space supporting local artists and handmade crafts.",
+            "image_url": "./images/casa_taller.webp"
+        },
+        {
+            "name": "Capilla San Luis de Francia",
+            "address": "Av. San Luis 1890, Peñalolén, Santiago",
+            "description": "Historic chapel known for its serene ambiance and traditional architecture.",
+            "image_url": "./images/capilla_san.webp"
+        }
+    ]
+}
