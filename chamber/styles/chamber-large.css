@@ -1,9 +1,10 @@
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 1025px) {
+
     /* header */
-    header{
+    header {
         min-height: 150px;
     }
-    
+
     .logo img {
         width: 130px;
         height: auto;
@@ -104,22 +105,34 @@
     }
 
     /* results */
-    #results{
+    #results {
         width: 70%;
     }
 
     /* membership levels */
-    .level-options{
+    .level-options {
         gap: 3rem;
     }
-    
-    .level-options section{
+
+    .level-options section {
         width: 450px;
     }
 
     /* dialog */
-    dialog{
+    dialog {
         top: 20%;
+    }
+
+    /* discover */
+    .item-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        min-height: 1400px;
+    }
+
+    .item-cards section {
+        margin-bottom: 0;
     }
 
     /* footer */

@@ -175,7 +175,8 @@ main {
 }
 
 .main-content h2,
-form h2 {
+form h2,
+.item-cards h2 {
     background-color: var(--primary);
     color: var(--light);
     padding: 0.5rem 1rem;
@@ -264,7 +265,8 @@ form h2 {
 }
 
 .cards img,
-.spotlights img {
+.spotlights img,
+.item-cards img {
     display: block;
     margin: 15px auto;
 }
@@ -412,7 +414,7 @@ form input[type="submit"]:hover {
 }
 
 /* confirmation message */
-#results{
+#results {
     width: 100%;
     background-color: var(--secondary-accent);
     border: 3px solid var(--secondary);
@@ -420,13 +422,13 @@ form input[type="submit"]:hover {
     padding: 1rem;
 }
 
-#results h2{
+#results h2 {
     font-size: 1.5rem;
     font-weight: 400;
     padding: 0.5rem;
 }
 
-#results p{
+#results p {
     padding: 0.5rem;
     font-size: 1.1rem;
 }
@@ -529,6 +531,60 @@ dialog button {
     right: 0.5rem;
     font-size: 1.5rem;
 }
+
+/* discover */
+.item-cards{
+    min-height: 3800px;
+}
+
+.item-cards section {
+    background-color: var(--primary-accent);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-areas:
+        "name"
+        "photo"
+        "desc"
+        "address"
+        "button"
+    ;
+}
+
+.item-cards h2 {
+    grid-area: name;
+}
+
+.item-cards figure {
+    grid-area: photo;
+}
+
+.item-cards p {
+    grid-area: desc;
+    padding: 0.5rem 1rem;
+}
+
+.item-cards address {
+    grid-area: address;
+    padding: 0.5rem 1rem;
+}
+
+.item-cards button {
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    grid-area: button;
+}
+
+#visit-message {
+    padding: 1rem;
+    background-color: var(--secondary-accent);
+    border-left: 7px solid var(--secondary);
+    margin: 1rem 0;
+    font-style: italic;
+  }
 
 /* footer */
 footer {
